@@ -267,7 +267,7 @@ client.labels.deleteByUserId('userId', {
 
 ## Score
 
-### [User Score](https://siftscience.com/developers/docs/curl/score-api/score-api)
+### [User Score](https://sift.com/developers/docs/curl/score-api/get-score)
 
 ```javascript
 client.score.getByUserId('userId', {
