@@ -20,10 +20,10 @@ Create a Sift HTTP Client using your API Key:
 
 ```javascript
 //get the Sift factory
-const SiftScienceClient = require('node-sift');
+const SiftClient = require('node-sift');
 
 //create an instance of the Sift client
-const client = new SiftScienceClient('your API Key');
+const client = new SiftClient('your API Key');
 
 //now you can use the client to make requests to Sift's API
 client.events.create({
@@ -46,14 +46,14 @@ client.events.create({
 When creating your Sift Client instance you can put it in debug mode to log any errors
 
 ```javascript
-const client = new SiftScienceClient('your API Key',{
+const client = new SiftClient('your API Key',{
   debugMode: true
 });
 ```
 
 ## Events
 
-### [Custom Events](https://siftscience.com/developers/docs/curl/events-api/custom-events)
+### [Custom Events](https://sift.com/developers/docs/curl/events-api/custom-events)
 
 ```javascript
 client.events.create({
@@ -63,9 +63,9 @@ client.events.create({
 });
 ```
 
-The library also supports shortcuts for Sift's [Reserved Events](https://siftscience.com/developers/docs/curl/events-api/reserved-events):
+The library also supports shortcuts for Sift's [Reserved Events](https://sift.com/developers/docs/curl/events-api/reserved-events):
 
-### [Create Order](https://siftscience.com/developers/docs/curl/events-api/reserved-events/create-order)
+### [Create Order](https://sift.com/developers/docs/curl/events-api/reserved-events/create-order)
 
 ```javascript
 client.events.createOrder({
@@ -74,7 +74,7 @@ client.events.createOrder({
 });
 ```
 
-### [Update Order](https://siftscience.com/developers/docs/curl/events-api/reserved-events/update-order)
+### [Update Order](https://sift.com/developers/docs/curl/events-api/reserved-events/update-order)
 
 ```javascript
 client.events.updateOrder({
@@ -83,7 +83,7 @@ client.events.updateOrder({
 });
 ```
 
-### [Transaction](https://siftscience.com/developers/docs/curl/events-api/reserved-events/transaction)
+### [Transaction](https://sift.com/developers/docs/curl/events-api/reserved-events/transaction)
 
 ```javascript
 client.events.transaction({
@@ -92,7 +92,7 @@ client.events.transaction({
 });
 ```
 
-### [Create Account](https://siftscience.com/developers/docs/curl/events-api/reserved-events/create-account)
+### [Create Account](https://sift.com/developers/docs/curl/events-api/reserved-events/create-account)
 
 ```javascript
 client.events.createAccount({
@@ -101,7 +101,7 @@ client.events.createAccount({
 });
 ```
 
-### [Update Account](https://siftscience.com/developers/docs/curl/events-api/reserved-events/update-account)
+### [Update Account](https://sift.com/developers/docs/curl/events-api/reserved-events/update-account)
 
 ```javascript
 client.events.updateAccount({
@@ -110,7 +110,7 @@ client.events.updateAccount({
 });
 ```
 
-### [Create Content](https://siftscience.com/developers/docs/curl/events-api/reserved-events/create-content)
+### [Create Content](https://sift.com/developers/docs/curl/events-api/reserved-events/create-content)
 
 ```javascript
 client.events.createContent({
@@ -119,7 +119,7 @@ client.events.createContent({
 });
 ```
 
-### [Update Content](https://siftscience.com/developers/docs/curl/events-api/reserved-events/update-content)
+### [Update Content](https://sift.com/developers/docs/curl/events-api/reserved-events/update-content)
 
 ```javascript
 client.events.updateContent({
@@ -128,7 +128,7 @@ client.events.updateContent({
 });
 ```
 
-### [Content Status](https://siftscience.com/developers/docs/curl/events-api/reserved-events/content-status)
+### [Content Status](https://sift.com/developers/docs/curl/events-api/reserved-events/content-status)
 
 ```javascript
 client.events.contentStatus({
@@ -137,7 +137,7 @@ client.events.contentStatus({
 });
 ```
 
-### [Flag Content](https://siftscience.com/developers/docs/curl/events-api/reserved-events/flag-content)
+### [Flag Content](https://sift.com/developers/docs/curl/events-api/reserved-events/flag-content)
 
 ```javascript
 client.events.flagContent({
@@ -146,7 +146,7 @@ client.events.flagContent({
 });
 ```
 
-### [Add Promotion](https://siftscience.com/developers/docs/curl/events-api/reserved-events/add-promotion)
+### [Add Promotion](https://sift.com/developers/docs/curl/events-api/reserved-events/add-promotion)
 
 ```javascript
 client.events.addPromotion({
@@ -155,7 +155,7 @@ client.events.addPromotion({
 });
 ```
 
-### [Add Item To Cart](https://siftscience.com/developers/docs/curl/events-api/reserved-events/add-item-to-cart)
+### [Add Item To Cart](https://sift.com/developers/docs/curl/events-api/reserved-events/add-item-to-cart)
 
 ```javascript
 client.events.addItemToCart({
@@ -164,7 +164,7 @@ client.events.addItemToCart({
 });
 ```
 
-### [Remove Item From Cart](https://siftscience.com/developers/docs/curl/events-api/reserved-events/remove-item-from-cart)
+### [Remove Item From Cart](https://sift.com/developers/docs/curl/events-api/reserved-events/remove-item-from-cart)
 
 ```javascript
 client.events.removeItemFromCart({
@@ -173,7 +173,7 @@ client.events.removeItemFromCart({
 });
 ```
 
-### [Submit Review](https://siftscience.com/developers/docs/curl/events-api/reserved-events/submit-review)
+### [Submit Review](https://sift.com/developers/docs/curl/events-api/reserved-events/submit-review)
 
 ```javascript
 client.events.submitReview({
@@ -182,7 +182,7 @@ client.events.submitReview({
 });
 ```
 
-### [Send Message](https://siftscience.com/developers/docs/curl/events-api/reserved-events/send-message)
+### [Send Message](https://sift.com/developers/docs/curl/events-api/reserved-events/send-message)
 
 ```javascript
 client.events.sendMessage({
@@ -191,7 +191,7 @@ client.events.sendMessage({
 });
 ```
 
-### [Login](https://siftscience.com/developers/docs/curl/events-api/reserved-events/login)
+### [Login](https://sift.com/developers/docs/curl/events-api/reserved-events/login)
 
 ```javascript
 client.events.login({
@@ -200,7 +200,7 @@ client.events.login({
 });
 ```
 
-### [Logout](https://siftscience.com/developers/docs/curl/events-api/reserved-events/logout)
+### [Logout](https://sift.com/developers/docs/curl/events-api/reserved-events/logout)
 
 ```javascript
 client.events.logout({
@@ -209,7 +209,7 @@ client.events.logout({
 });
 ```
 
-### [Link Session To User](https://siftscience.com/developers/docs/curl/events-api/reserved-events/link-session-to-user)
+### [Link Session To User](https://sift.com/developers/docs/curl/events-api/reserved-events/link-session-to-user)
 
 ```javascript
 client.events.linkSessionToUser({
@@ -218,7 +218,7 @@ client.events.linkSessionToUser({
 });
 ```
 
-### [Chargeback](https://siftscience.com/developers/docs/curl/events-api/reserved-events/chargeback)
+### [Chargeback](https://sift.com/developers/docs/curl/events-api/reserved-events/chargeback)
 
 ```javascript
 client.events.chargeback({
@@ -227,7 +227,7 @@ client.events.chargeback({
 });
 ```
 
-### [Order Status](https://siftscience.com/developers/docs/curl/events-api/reserved-events/order-status)
+### [Order Status](https://sift.com/developers/docs/curl/events-api/reserved-events/order-status)
 
 ```javascript
 client.events.orderStatus({
@@ -236,7 +236,7 @@ client.events.orderStatus({
 });
 ```
 
-### [Verification](https://siftscience.com/developers/docs/curl/events-api/reserved-events/verification)
+### [Verification](https://sift.com/developers/docs/curl/events-api/reserved-events/verification)
 
 ```javascript
 client.events.verification({
@@ -247,7 +247,7 @@ client.events.verification({
 
 ## Labels
 
-### [Label User](https://siftscience.com/developers/docs/curl/labels-api/label-user)
+### [Label User](https://sift.com/developers/docs/curl/labels-api/label-user)
 
 ```javascript
 client.labels.createByUserId('userId', {
@@ -257,7 +257,7 @@ client.labels.createByUserId('userId', {
 });
 ```
 
-### [Unlabel User](https://siftscience.com/developers/docs/curl/labels-api/unlabel-user)
+### [Unlabel User](https://sift.com/developers/docs/curl/labels-api/unlabel-user)
 
 ```javascript
 client.labels.deleteByUserId('userId', {
@@ -290,7 +290,7 @@ client.events.create({
 
 ## Decisions
 
-### [Apply Decisions](https://siftscience.com/developers/docs/curl/decisions-api/apply-decisions)
+### [Apply Decisions](https://sift.com/developers/docs/curl/decisions-api/apply-decisions)
 
 ```javascript
 client.decisions.applyByAccountIdAndUserId('accountId', 'userId', {
@@ -298,19 +298,19 @@ client.decisions.applyByAccountIdAndUserId('accountId', 'userId', {
 });
 ```
 
-### [User Decisions](https://siftscience.com/developers/docs/curl/decisions-api/decision-status)
+### [User Decisions](https://sift.com/developers/docs/curl/decisions-api/decision-status)
 
 ```javascript
 client.decisions.getByAccountIdAndUserId('accountId', 'userId');
 ```
 
-### [Order Decisions](https://siftscience.com/developers/docs/curl/decisions-api/decision-status)
+### [Order Decisions](https://sift.com/developers/docs/curl/decisions-api/decision-status)
 
 ```javascript
 client.decisions.getByAccountIdAndOrderId('accountId', 'orderId');
 ```
 
-### [Decisions List](https://siftscience.com/developers/docs/curl/decisions-api/decisions-list)
+### [Decisions List](https://sift.com/developers/docs/curl/decisions-api/decisions-list)
 
 ```javascript
 client.decisions.listByAccountId('accountId');
