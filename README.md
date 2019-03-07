@@ -1,31 +1,31 @@
-# node-siftscience
+# node-sift
 
-Node client for Sift Science API
+Node client for Sift API
 
-[![Build Status](https://travis-ci.org/officert/node-siftscience.svg?branch=master)](https://travis-ci.org/officert/node-siftscience)
+[![Build Status](https://travis-ci.org/truebill/node-sift.svg?branch=master)](https://travis-ci.org/truebill/node-sift)
 
-[![Coverage Status](https://coveralls.io/repos/github/officert/node-siftscience/badge.svg?branch=master)](https://coveralls.io/github/officert/node-siftscience?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/truebill/node-sift/badge.svg?branch=master)](https://coveralls.io/github/truebill/node-sift?branch=master)
 
-Node JS, Promise Based HTTP Client for Sift Science's API.
+Node JS, Promise Based HTTP Client for Sift's API.
 
 ## Installation
 
 ```shell
-npm install node-siftscience --save
+npm install node-sift --save
 ```
 
 ## Quick Start
 
-Create a Sift Science HTTP Client using your API Key:
+Create a Sift HTTP Client using your API Key:
 
 ```javascript
-//get the Sift Science factory
-const SiftScienceClient = require('node-siftscience');
+//get the Sift factory
+const SiftScienceClient = require('node-sift');
 
-//create an instance of the Sift Science client
+//create an instance of the Sift client
 const client = new SiftScienceClient('your API Key');
 
-//now you can use the client to make requests to Sift Science's API
+//now you can use the client to make requests to Sift's API
 client.events.create({
   $type: 'your custom event'
 });
@@ -43,7 +43,7 @@ client.events.create({
 
 ## Debug mode
 
-When creating your Sift Science Client instance you can put it in debug mode to log any errors
+When creating your Sift Client instance you can put it in debug mode to log any errors
 
 ```javascript
 const client = new SiftScienceClient('your API Key',{
@@ -63,7 +63,7 @@ client.events.create({
 });
 ```
 
-The library also supports shortcuts for Sift Science's [Reserved Events](https://siftscience.com/developers/docs/curl/events-api/reserved-events):
+The library also supports shortcuts for Sift's [Reserved Events](https://siftscience.com/developers/docs/curl/events-api/reserved-events):
 
 ### [Create Order](https://siftscience.com/developers/docs/curl/events-api/reserved-events/create-order)
 

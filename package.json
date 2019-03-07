@@ -1,6 +1,6 @@
 {
-  "name": "node-siftscience",
-  "version": "1.0.0",
+  "name": "node-sift",
+  "version": "0.0.1",
   "description": "Node HTTP client for Sift Science's API",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/officert/node-siftscience.git"
+    "url": "git+https://github.com/truebill/node-sift.git"
   },
   "keywords": [
     "Sift",
@@ -28,9 +28,9 @@
   "author": "Tim Officer",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/officert/node-siftscience/issues"
+    "url": "https://github.com/truebill/node-sift/issues"
   },
-  "homepage": "https://github.com/officert/node-siftscience#readme",
+  "homepage": "https://github.com/truebill/node-sift#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "bluebird": "^3.5.0",
