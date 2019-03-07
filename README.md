@@ -2,9 +2,9 @@
 
 Node client for Sift API
 
-[![Build Status](https://travis-ci.org/truebill/node-sift.svg?branch=master)](https://travis-ci.org/truebill/node-sift)
+[![Build Status](https://travis-ci.org/Truebill/node-sift.svg?branch=master)](https://travis-ci.org/truebill/node-sift)
 
-[![Coverage Status](https://coveralls.io/repos/github/truebill/node-sift/badge.svg?branch=master)](https://coveralls.io/github/truebill/node-sift?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Truebill/node-sift/badge.svg?branch=master)](https://coveralls.io/github/truebill/node-sift?branch=master)
 
 Node JS, Promise Based HTTP Client for Sift's API.
 
